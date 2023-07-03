@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function removeDuplicates(str) {
+  var charSet = new Set(str);
+  var uniqueChars = Array.from(charSet);
+  var result = uniqueChars.join('');
+  return result;
+}
+
+var sentence = "Hello, World!";
+var result = removeDuplicates(sentence);
+console.log(result); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CharactersUnique(str) {
+  var charSet = new Set(str);
+   if(str.length === charSet.size){
+      return('unique')
+  } else {
+    return('not unique')
+  }
+}
+
+// Example usage:
+var sentence = "Hello, World!";
+document.write('The sentence is '+CharactersUnique(sentence)+'<br>')
+console.log(CharactersUnique(sentence)); 
+
+var word = "Unique";
+document.write('The word is '+CharactersUnique(word))
+console.log(CharactersUnique(word)); 
+    </script>
+    
+</body>
+</html>

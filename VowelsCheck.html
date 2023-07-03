@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+     function ThreeOrMoreVowels(str) {
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  var vowelCount = 0;
+
+  for (var i = 0; i < str.length; i++) {
+    var char = str[i].toLowerCase();
+    if (vowels.includes(char)) {
+      vowelCount++;
+    }
+  }
+//   if(vowelCount >= 3){
+//     return('its true')
+//   } else {
+//     return('its false')
+//   }
+
+   return vowelCount >= 3;
+}
+
+
+var sentence = "apple orange";
+document.write(sentence+' '+ThreeOrMoreVowels(sentence)+'<br>')
+console.log(ThreeOrMoreVowels(sentence))
+
+var word = "Hello";
+document.write(word+' '+ThreeOrMoreVowels(word))
+console.log(ThreeOrMoreVowels(word))
+
+</script>
+</body>
+</html>
